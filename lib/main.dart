@@ -12,7 +12,7 @@ class TodoList extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'To-Do List App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue), useMaterial3: true),
       home:  const TodoListPage()
     );
   }
